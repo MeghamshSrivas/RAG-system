@@ -26,13 +26,12 @@ Images and audio are searched as extracted text, not as raw pixels or sound. Ans
 ## Requirements
 
 - Python and Node.js/npm installed.
+- Python dependencies can be installed from the repository root with `python -m pip install -r requirements.txt`.
 - Ollama installed, running locally, and configured with the `llama3` model.
 - The embedding model available in the local Hugging Face cache; retrieval is configured to load it locally.
 - Tesseract OCR installed for image uploads.
 - FFmpeg available on `PATH` for audio transcription. The upload processor also checks `C:\ffmpeg-8.1.1-essentials_build\bin`.
 - A root `.env` file containing the required application secrets.
-
-The repository currently has no Python dependency lock or `requirements.txt`; install the Python packages used by the backend and ingestion modules in your environment before starting the API.
 
 ## Configuration
 
